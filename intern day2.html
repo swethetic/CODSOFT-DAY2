@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="swe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        function showConfirmation(event) {
+            event.preventDefault(); // Prevent form from submitting
+            alert("Your message has been submitted successfully!");
+            // Redirect to another page (success page)
+            window.location.href = 'success.html'; // Change 'success.html' to your target page
+        }
+    </script>
+    <style>
+        /* Global background color */
+        body {
+            background-color: #f2f2f2; /* Pastel gray */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header background color */
+        header {
+            background-color: #ffd8b1; /* Pastel peach */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .intro h1 {
+            font-size: 2.5em;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+
+        .btn {
+            background-color: #ffb3b3; /* Pastel pink */
+            padding: 10px 20px;
+            border: none;
+            color: white;
+            font-size: 1.1em;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #ff8080; /* Slightly darker pink on hover */
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff; /* White background for sections */
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #333;
+        }
+
+        section ul {
+            list-style-type: none;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+        }
+
+        .skills-container .skill {
+            background-color: #ffd699; /* Pastel yellow for skills section */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            max-height: 300px; /* Set a maximum height */
+            object-fit: cover; /* This ensures the image is cropped to fit within the specified height */
+        }
+
+        .section-divider {
+            border-top: 2px solid #ddd; /* Light gray line */
+            margin: 40px 0;
+        }
+
+        #skills {
+            background-color: #e8f9f3; /* Pastel green for skills section */
+        }
+
+        #open-source {
+            background-color: #f1e0f3; /* Pastel purple for open-source section */
+        }
+
+        #projects {
+            background-color: #e1f7d5; /* Pastel mint for projects section */
+        }
+
+        #achievements {
+            background-color: #d4e2f2; /* Pastel blue for achievements section */
+        }
+
+        #blogs {
+            background-color: #ffe5e5; /* Pastel pink for blogs section */
+        }
+
+        #talks {
+            background-color: #ffeed0; /* Pastel yellow for talks section */
+        }
+
+        #contact {
+            background-color: #d6f5d6; /* Pastel light green for contact section */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#open-source">Open Source</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#talks">Talks</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <div class="intro">
+                <h1>Hi all, I'm Swetha <span class="wave">👋</span></h1>
+                <p>A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+                <div class="buttons">
+                    <a href="#contact" class="btn">Contact Me</a>
+                    <a href="C:\Users\Swetha\resume.pdf.pdf" class="btn" download>See My Resume</a> <!-- Local resume file -->
+                </div>
+            </div>
+            <div class="image">
+                <img src="your-image.png" alt="Illustration">
+            </div>
+        </div>
+    </header>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Experienced in building dynamic web applications using JavaScript, React, and Node.js.</p>
+            </div>
+            <div class="skill">
+                <h3>React.js</h3>
+                <p>Proficient in creating interactive UIs using React and Redux.</p>
+            </div>
+            <div class="skill">
+                <h3>Node.js</h3>
+                <p>Skilled in server-side development with Node.js and Express.</p>
+            </div>
+            <div class="skill">
+                <h3>React Native</h3>
+                <p>Experienced in developing mobile applications using React Native.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div> <!-- Divider line between sections -->
+
+    <section id="open-source">
+        <h2>Open Source</h2>
+        <p>Contributed to various open-source projects, including:</p>
+        <ul>
+            <li><a href="#">Project 1</a> - Contributed to the development of a JavaScript library for improving web accessibility.</li>
+            <li><a href="#">Project 2</a> - Helped improve documentation for a React-based UI component library.</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project Title 1: E-commerce Web Application</h3>
+            <img src="project1-image.jpg" alt="Project 1">
+            <p>This is an e-commerce platform built using React, Node.js, and MongoDB. It allows users to browse products, add them to their cart, and checkout. It also includes an admin panel for managing products and orders.</p>
+        </div>
+        <div class="project">
+            <h3>Project Title 2: Social Media App</h3>
+            <img src="project2-image.png" alt="Project 2">
+            <p>A full-stack social media application built with React Native and Firebase. It supports real-time messaging, user authentication, and media sharing. This project helped improve my skills in mobile app development and cloud services integration.</p>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Achievement 1 - Built a personal blog using Node.js and Express to share technical knowledge and tutorials.</li>
+            <li>Achievement 2 - Contributed to the development of an open-source API for managing user data in a secure way.</li>
+        </ul>
+    </section>
+
+    <section id="blogs">
+        <h2>Blogs</h2>
+        <div class="blog">
+            <h3><a href="#">Blog Title 1: Understanding React's Virtual DOM</a></h3>
+            <p>In this blog post, I explain the concept of the Virtual DOM and how it improves React’s performance. I also go through the process of how React updates the DOM efficiently.</p>
+        </div>
+        <div class="blog">
+            <h3><a href="#">Blog Title 2: Building Full-Stack Applications with React and Node.js</a></h3>
+            <p>This blog walks through building a full-stack web application using React for the frontend and Node.js with Express for the backend. I cover key concepts like RESTful APIs and data flow management.</p>
+        </div>
+    </section>
+
+    <section id="talks">
+        <h2>Talks</h2>
+        <div class="talk">
+            <h3>Talk Title 1: Introduction to React</h3>
+            <p>In this talk, I gave an overview of React.js, explaining its core concepts like components, state, and props. I also demonstrated how to build a simple React app from scratch.</p>
+        </div>
+        <div class="talk">
+            <h3>Talk Title 2: Building Scalable Applications with Node.js</h3>
+            <p>This talk was focused on how to build scalable and efficient applications using Node.js. I discussed topics such as asynchronous programming, using middleware, and scaling the application to handle large amounts of traffic.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form onsubmit="showConfirmation(event)" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+</body>
+</html>
+
+
+
+
